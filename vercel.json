@@ -1,5 +1,5 @@
 {
     "version": 2,
     "builds": [{ "src": "app.js", "use": "@vercel/node" }],
-    "rewrites": [{ "src": "/(.*)","dest": "app.js" },{ "source": "/css/:path*", "destination": "/public/css/:path*"}]
+    "rewrites": [{ "source": "/(.*)","destination": "app.js" },{ "source": "/css/:path*", "destination": "/public/css/:path*"}]
 }

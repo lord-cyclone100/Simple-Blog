@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/new.css">
+</head>
+<body>
+    <div class="main">
+        <h1>New Blog</h1>
+        <div class="box">
+            <form action="/new" method="POST">
+                <label for="title" class="head">Title:</label>
+                <input type="text" name="title" required placeholder="Enter Title" class="txtbox">
+                <label for="title" class="head">Content:</label>
+                <textarea name="content" required placeholder="Enter Content" class="txtarea"></textarea>
+                <div class="btnbox" type="submit">
+                    <button type="submit">Create</button>
+                </div>
+
+            </form>
+        </div>
+        <a href="/"><button>Home</button></a>
+    </div>
+    <%- include('partials/footer') %>
+
+</body>
+</html>
